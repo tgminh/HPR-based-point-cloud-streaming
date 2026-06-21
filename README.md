@@ -6,18 +6,6 @@ The project processes point cloud sequences together with a camera trajectory an
 
 ---
 
-## Features
-
-- Frame-wise point cloud processing
-- Hidden Point Removal (HPR)
-- Multi-viewpoint HPR based on ISM24
-- Camera trajectory support from JSON files
-- ASCII PLY output
-- Viewport rendering and comparison video generation
-- Open3D-based implementation
-
----
-
 ## Project Structure
 
 ```text
@@ -33,7 +21,7 @@ project/
 ├── hpr_static.py
 ├── render.py
 │
-├── campath_0.json
+├── campath_0.json #json file of camera trajectory
 │
 ├── hpr_output/
 │   └── longdress/
