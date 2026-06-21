@@ -107,6 +107,7 @@ hpr_output/
     └── ...
 ```
 The camera trajectory dataset proposed in the ICUFN 2025 paper is available [here](https://drive.google.com/drive/folders/1gUbnUwsGkxQI_zXCRgY0DVuuLe5_g_E_?usp=drive_link).
+
 The viewport extraction tool proposed in the ICUFN 2025 paper is available [here](https://github.com/nghiantran03/Camera-Path-Tool.git)
 
 ---
