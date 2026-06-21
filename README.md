@@ -7,9 +7,7 @@ Implementation of a dynamic adaptive point cloud streaming pipeline proposed in:
 
 ## Overview
 
-Point cloud streaming systems typically transmit the entire point cloud regardless of the user's current viewpoint, resulting in significant bandwidth overhead.
-
-The ISM 2024 framework introduces a viewport-aware strategy in which only potentially visible points are retained before transmission. Hidden Point Removal (HPR) is employed to estimate visible regions from the user viewpoint.
+Point cloud streaming systems typically transmit the entire point cloud regardless of the user's current viewpoint, resulting in significant bandwidth overhead. The ISM 2024 framework introduces a viewport-aware strategy in which only potentially visible points are retained before transmission. Hidden Point Removal (HPR) is employed to estimate visible regions from the user viewpoint.
 
 ## Project Structure
 
@@ -41,7 +39,7 @@ project/
 Python 3.11
 
 ```bash
-pip install numpy open3d pillow
+pip install -r requirements.txt
 ```
 
 Optional:
@@ -164,9 +162,9 @@ If you find this repository useful for your research, please consider citing the
 ### ISM 2024
 
 ```bibtex
-@article{truong2024serverdriven,
+@article{tran2024serverdriven,
   title={A Server-driven View-aware Point Cloud Video Streaming Framework},
-  author={Truong, Gia Minh and Thu Huong, Truong and Nguyen, Duc V.},
+  author={Tran, Gia Minh and Thu Huong, Truong and Nguyen, Duc V.},
   journal={
 ```
 
