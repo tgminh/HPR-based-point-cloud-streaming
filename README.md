@@ -1,10 +1,15 @@
-# Point Cloud Hidden Point Removal using Camera Trajectory
+# Dynamic Adaptive Point Cloud Streaming with Viewport-Aware Hidden Point Removal
 
-Implementation of a frame-wise Hidden Point Removal (HPR) pipeline for dynamic point clouds based on the viewport-dependent optimization idea presented in the ISM 2024 paper.
+Implementation of a dynamic adaptive point cloud streaming pipeline proposed in:
 
-The project processes point cloud sequences together with a camera trajectory and removes points that are not visible from the user's viewpoint.
+- **A Server-driven View-aware Point Cloud Video Streaming Framework**, IEEE International Symposium on Multimedia (ISM), 2024.
+- **A Toward Optimal Viewport Adaptive Volumetric Video Streaming: Problem, Essential Tools, and Datasets**, IEEE International Conference on Ubiquitous and Future Networks (ICUFN), 2025.
 
----
+## Overview
+
+Point cloud streaming systems typically transmit the entire point cloud regardless of the user's current viewpoint, resulting in significant bandwidth overhead.
+
+The ISM 2024 framework introduces a viewport-aware strategy in which only potentially visible points are retained before transmission. Hidden Point Removal (HPR) is employed to estimate visible regions from the user viewpoint.
 
 ## Project Structure
 
@@ -151,3 +156,29 @@ HPR_RADIUS_FACTOR = 10000
 
 Higher values generally preserve more visible points.
 
+
+## Reference
+
+If you find this repository useful for your research, please consider citing the original papers.
+
+### ISM 2024
+
+```bibtex
+@article{truong2024serverdriven,
+  title={A Server-driven View-aware Point Cloud Video Streaming Framework},
+  author={Truong, Gia Minh and Thu Huong, Truong and Nguyen, Duc V.},
+  journal={
+```
+
+### ICUFN 2025
+
+```bibtex
+@article{nguyen2025toward,
+  title={Toward Optimal Viewport Adaptive Volumetric Video Streaming: Problem, Essential Tools, and Datasets},
+  author={Nguyen, Long Quang and Nguyen, Thi Anh Tho and Tran, Gia Minh and Tran, Dai Nghia and Truong, Thu Huong and Nguyen, Duc V.},
+  journal={TechRxiv},
+  year={2025},
+  publisher={IEEE}
+}
+
+```
